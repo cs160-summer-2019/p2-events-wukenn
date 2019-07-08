@@ -63,8 +63,38 @@
 
 
 <script type="text/javascript">
-	// your solution here
-
+  $(document).ready(() => {
+    
+    const $purple = $('.bg-purple');
+    const $green = $('.bg-green');
+    const $blue = $('.bg-blue');
+    const $orangeborder = $('.p2-circle.bg-orange.p2-border');
+    const $gradient = $('#gradient-circle');
+    const $reset = $('.btn');
+    
+    $purple.on('click', () => {
+      $purple.hide();
+    })
+    
+    $green.on('click', () => {
+      $blue.hide();
+      $green.hide();
+    })
+    
+    $orangeborder.on('click', () => {
+      $orangeborder.hide();
+    })
+    
+    $gradient.on('mouseover', () =>{
+      $gradient.hide();
+    })
+    
+    $reset.click(function() {
+      $('.p2-circle').show();
+    })
+    
+  })
+  
 </script>
 </body>
 </html>
